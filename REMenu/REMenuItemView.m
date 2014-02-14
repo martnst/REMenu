@@ -177,6 +177,10 @@
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
+    if ([self.item isKindOfClass:[REMenuSectionHeader class]]) {
+        return;
+    }
+    
     self.backgroundView.backgroundColor = self.item.highlightedBackgroundColor == nil ? self.menu.highlightedBackgroundColor : self.item.highlightedBackgroundColor;
     self.separatorView.backgroundColor = self.item.highlightedSeparatorColor == nil ? self.menu.highlightedSeparatorColor : self.item.highlightedSeparatorColor;
     self.imageView.image = self.item.higlightedImage ? self.item.higlightedImage : self.item.image;
@@ -190,6 +194,10 @@
 
 - (void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event
 {
+    if ([self.item isKindOfClass:[REMenuSectionHeader class]]) {
+        return;
+    }
+    
     self.backgroundView.backgroundColor = self.item.backgroundColor == nil ? [UIColor clearColor] : self.item.backgroundColor;
     self.separatorView.backgroundColor = self.menu.separatorColor;
     self.imageView.image = self.item.image;
@@ -203,6 +211,10 @@
 
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
 {
+    if ([self.item isKindOfClass:[REMenuSectionHeader class]]) {
+        return;
+    }
+    
     self.backgroundView.backgroundColor = self.item.backgroundColor == nil ? [UIColor clearColor] : self.item.backgroundColor;
     self.separatorView.backgroundColor = self.item.separatorColor == nil ? self.menu.separatorColor : self.item.separatorColor;
     self.imageView.image = self.item.image;
