@@ -40,6 +40,11 @@
     if (self) {
         self.menu = menu;
         self.item = item;
+        
+        if ([item isKindOfClass:[REMenuSectionHeader class]]) {
+            [self configureViewAsSectionHeader];
+        }
+        
         self.isAccessibilityElement = YES;
         self.accessibilityTraits = UIAccessibilityTraitButton;
         self.accessibilityHint = NSLocalizedString(@"Double tap to choose", @"Double tap to choose");
@@ -104,6 +109,12 @@
         [self addSubview:_badgeLabel];
     }
     return self;
+}
+
+- (void) configureViewAsSectionHeader {
+    self.item.textAlignment = self.menu.headerTextAlignment;
+    self.item.font = self.menu.headerFont;
+    self.item.textOffset = self.menu.headerTextOffset;
 }
 
 - (void)layoutSubviews

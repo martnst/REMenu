@@ -36,6 +36,7 @@
 		30E0F7AE16D54641001949EA /* REMenuItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 30E0F7AB16D54641001949EA /* REMenuItemView.m */; };
 		30E0F7B116D54CE0001949EA /* REMenuContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 30E0F7B016D54CE0001949EA /* REMenuContainerView.m */; };
 		30E405CC181581B200C6B0F4 /* Balloon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 30E405CB181581B200C6B0F4 /* Balloon@2x.png */; };
+		7854D25718AE851800CEED49 /* REMenuSectionHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 7854D25618AE851800CEED49 /* REMenuSectionHeader.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -83,6 +84,8 @@
 		30E0F7AF16D54CE0001949EA /* REMenuContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REMenuContainerView.h; sourceTree = "<group>"; };
 		30E0F7B016D54CE0001949EA /* REMenuContainerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REMenuContainerView.m; sourceTree = "<group>"; };
 		30E405CB181581B200C6B0F4 /* Balloon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Balloon@2x.png"; sourceTree = "<group>"; };
+		7854D25518AE851800CEED49 /* REMenuSectionHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REMenuSectionHeader.h; sourceTree = "<group>"; };
+		7854D25618AE851800CEED49 /* REMenuSectionHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REMenuSectionHeader.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,6 +199,8 @@
 				30B35CF117E54BFA0082CE0E /* RECommonFunctions.m */,
 				30E0F7A616D54641001949EA /* REMenu.h */,
 				30E0F7A716D54641001949EA /* REMenu.m */,
+				7854D25518AE851800CEED49 /* REMenuSectionHeader.h */,
+				7854D25618AE851800CEED49 /* REMenuSectionHeader.m */,
 				30E0F7A816D54641001949EA /* REMenuItem.h */,
 				30E0F7A916D54641001949EA /* REMenuItem.m */,
 				30E0F7AA16D54641001949EA /* REMenuItemView.h */,
@@ -281,6 +286,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7854D25718AE851800CEED49 /* REMenuSectionHeader.m in Sources */,
 				30E0F78A16D545F7001949EA /* main.m in Sources */,
 				30E0F78E16D545F7001949EA /* AppDelegate.m in Sources */,
 				30B35CF217E54BFA0082CE0E /* RECommonFunctions.m in Sources */,

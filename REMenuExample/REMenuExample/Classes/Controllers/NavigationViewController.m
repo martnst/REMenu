@@ -43,6 +43,10 @@
                                                           [weakSelf setViewControllers:@[controller] animated:NO];
                                                       }];
     
+    
+    REMenuSectionHeader *sectionHeader = [[REMenuSectionHeader alloc] initWithTitle:@"Section Header"];
+    
+    
     REMenuItem *exploreItem = [[REMenuItem alloc] initWithTitle:@"Explore"
                                                        subtitle:@"Explore 47 additional options"
                                                           image:[UIImage imageNamed:@"Icon_Explore"]
@@ -92,7 +96,7 @@
     activityItem.tag = 2;
     profileItem.tag = 3;
     
-    self.menu = [[REMenu alloc] initWithItems:@[homeItem, exploreItem, activityItem, profileItem]];
+    self.menu = [[REMenu alloc] initWithItems:@[homeItem, sectionHeader, exploreItem, activityItem, profileItem]];
     
     // Background view
     //

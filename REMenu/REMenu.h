@@ -26,6 +26,7 @@
 #import <UIKit/UIKit.h>
 #import <QuartzCore/QuartzCore.h>
 #import "RECommonFunctions.h"
+#import "REMenuSectionHeader.h"
 #import "REMenuItem.h"
 #import "REMenuContainerView.h"
 
@@ -60,6 +61,12 @@ typedef NS_ENUM(NSInteger, REMenuLiveBackgroundStyle) {
 @property (assign, readwrite, nonatomic) CGSize shadowOffset;
 @property (assign, readwrite, nonatomic) CGFloat shadowOpacity;
 @property (assign, readwrite, nonatomic) CGFloat shadowRadius;
+
+@property (assign, readwrite, nonatomic) CGSize headerTextOffset;
+@property (assign, readwrite, nonatomic) CGFloat headerHeight;
+@property (assign, readwrite, nonatomic) NSTextAlignment headerTextAlignment;
+@property (strong, readwrite, nonatomic) UIFont *headerFont;
+
 @property (assign, readwrite, nonatomic) CGFloat itemHeight;
 @property (strong, readwrite, nonatomic) UIColor *backgroundColor;
 @property (strong, readwrite, nonatomic) UIColor *separatorColor;
